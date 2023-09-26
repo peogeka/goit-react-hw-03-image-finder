@@ -6,7 +6,7 @@ export const SearchForm = styled(Form)`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px;
+  padding: 16px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -16,6 +16,8 @@ export const Wraper = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+  border-radius: 3px;
+  
 `;
 
 export const Button = styled.button`
@@ -28,4 +30,5 @@ export const Button = styled.button`
 
 export const Input = styled(Field)`
   padding: 0 0 0 20px;
+ 
 `;

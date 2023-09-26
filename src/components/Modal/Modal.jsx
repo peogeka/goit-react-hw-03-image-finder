@@ -31,7 +31,7 @@ export class Modal extends Component {
     return createPortal(
       <Overlay className="overlay" onClick={this.clickBackDrop}>
         <Close type="button" onClick={this.props.onClose}>
-          <IconContext.Provider value={{ size: 32 }}>
+          <IconContext.Provider value={{ size: 45 }}>
             <AiFillCloseCircle />
           </IconContext.Provider>
         </Close>

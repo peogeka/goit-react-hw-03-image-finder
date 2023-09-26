@@ -88,7 +88,7 @@ export class App extends Component {
 
   render() {
     return (
-      <div
+      <div 
         ref={this.myApp}
         style={{
           padding: '0 0 32px',
@@ -103,10 +103,11 @@ export class App extends Component {
           this.state.page * COUNT_IN_PAGE < this.state.totalCount && <Button onClick={this.handleIncreasePage} />}
 
         {this.state.status === Status.PENDING && <Loader />}
-
+        
         {this.state.item && this.state.status === Status.RESOLVED && (
           <Modal onClose={this.handleCloseModal} item={this.state.item} />
         )}
+        
         
         <NotificationContainer />
       </div>
